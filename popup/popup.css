@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("./SpaceMono-Regular.ttf") format("ttf"),
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Space Mono', 'Courier New', Courier, monospace;
+}
+
+html, body {
+  width: 600px;
+}
+
+.remove-btn {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  border: none;
+  background-color: crimson;
+  color: antiquewhite;
+  padding: 0;
+  letter-spacing: unset;
+  cursor: pointer;
+}
+
+.remove-btn:focus, .remove-btn:hover {
+  background: darkred;
+  border-color: unset;
+}
+
+.btn {
+  width: 100%;
+}
+
+#save {
+  transition: all .3s ease-in-out;
+}
+
+.table tbody tr td:last-of-type {
+  display: flex;
+  justify-content: center;
+}

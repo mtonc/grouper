@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="./spectre.min.css" />
+  <link rel="stylesheet" href="./popup.css" />
+  <script type="module" src="./popup.js"></script>
+</head>
+<body class="container">
+  <table class="input-table table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th>Group Name</th>
+        <th>Color</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="form-group">
+          <input class="url-input form-input" type="url" placeholder="https://example.com" />
+        </td>
+        <td class="form-group">
+          <input class="name-input form-input" type="text" placeholder="Reddit"/>
+        </td>
+        <td class="form-group">
+          <select class="color-input form-select">
+            <option value="grey" selected>Grey</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+            <option value="purple">Purple</option>
+            <option value="cyan">Cyan</option>
+            <option value="orange">Orange</option>
+          </select>
+        </td>
+        <td>
+          <button class="remove-btn btn btn-action s-circle " type="button" data-index="0">x</button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>
+          <button id="add-group" class="btn" type="button">Add Group</button>
+        </div>
+        <td>
+          <button id="save" class="btn btn-primary" type="button">Save</button>
+        </div>
+      </tr>
+    </tfoot>
+  </table>
+</body>

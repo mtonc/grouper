@@ -1,0 +1,30 @@
+{
+  "name": "Grouper",
+  "description": "A Tab auto grouper based on user supplied urls",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage"
+  ],
+  "background": {
+    "type": "module",
+    "service_worker": "./background.js"
+  },
+  "minimum_chrome_version": "92",
+  "action": {
+    "default_title": "Grouper",
+    "default_popup": "./popup/popup.html",
+    "default_icon": {
+      "32": "./icons/tabs32.png",
+      "64": "./icons/tabs64.png",
+      "128": "./icons/tabs128.png"
+    }
+  },
+  "icons": {
+    "32": "./icons/tabs32.png",
+    "64": "./icons/tabs64.png",
+    "128": "./icons/tabs128.png"
+  }
+}
